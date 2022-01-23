@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Register } from './pages/Register';
 import { Game } from './pages/Game';
 import { Question } from "./pages/Question";
-import { Points } from './components/Points';
 import RandomFact from './components/RandomFact'
 
 
@@ -15,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Register />} />
           <Route path="/game" element={<Game />} />
-          <Route path="/points" element={<Points newValue={ 30 } />} />
+          <Route path="/fun-facts" element={<RandomFact />} />
         </Routes>
       </BrowserRouter>
     </div>
