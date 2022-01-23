@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios' 
-import '../styles/Register.scss'
+import axios from 'axios' ;
+import '../styles/RandomFact.scss';
+import {Link} from 'react-router-dom'
 
 const fetchUrlFacts = 'https://ffa.aakhilv.me/json'
 
@@ -27,7 +28,10 @@ const nextFact = () => {
 
     return (
         <div className='main'>
-            <h1>Di you know that...?</h1>
+            <div className='getBack'>
+                <Link to='/game'>Get back</Link>
+            </div>
+            <h1>Did you know that...?</h1>
             <div className='container'>
                 <p>{fact}</p>
             </div>
