@@ -1,0 +1,10 @@
+
+@import './Variables.scss';
+
+.getBack a, a:hover, a:active {
+  font-size: inherit;
+  text-decoration: none;
+  color: $button-color;
+  font-weight: bold;
+  font-size: 16px;
+}

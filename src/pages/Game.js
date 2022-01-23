@@ -10,7 +10,7 @@ export const Game = () => {
   };
 
   const handleQuestionGame = () => {
-    navigate('/../question-game');
+    navigate('/../question');
   };
 
   return (

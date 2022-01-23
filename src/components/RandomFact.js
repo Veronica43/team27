@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios' ;
 import '../styles/RandomFact.scss';
-import {Link} from 'react-router-dom'
+import { ButtonBack } from '../components/ButtonBack';
 
 const fetchUrlFacts = 'https://ffa.aakhilv.me/json'
 
@@ -18,7 +18,7 @@ useEffect( () => {
 const getFacts = async () => {
     const result = await axios.get(fetchUrlFacts)
     const text = result.data.text
-    setFact(text)        
+    setFact(text)
 }
 
     // Method to get next Fact
@@ -28,9 +28,7 @@ const nextFact = () => {
 
     return (
         <div className='main'>
-            <div className='getBack'>
-                <Link to='/game'>Get back</Link>
-            </div>
+            <ButtonBack />
             <h1>Did you know that...?</h1>
             <div className='container'>
                 <p>{fact}</p>

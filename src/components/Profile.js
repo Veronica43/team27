@@ -3,8 +3,7 @@ import { useEffect, useState, useContext } from 'react';
 import { UserContext } from './UserContext';
 
 export const Profile = ({ points }) => {
-  //const { userName } = useContext(UserContext);
-  const userName = 'sariten';
+  const { userName } = useContext(UserContext);
   const [url, setUrl] = useState('');
 
   useEffect(() => {
@@ -23,7 +22,7 @@ export const Profile = ({ points }) => {
         <img src={ url } alt="Random generated robot pic" />
       </div>
       <p className="profile-points">
-        <span>20</span>
+        <span>{ points }</span>
         <span>points</span>
       </p>
     </div>
