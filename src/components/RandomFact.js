@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios' 
-import '../styles/Register.scss'
+import axios from 'axios' ;
+import '../styles/RandomFact.scss'
 
 const fetchUrlFacts = 'https://ffa.aakhilv.me/json'
 
