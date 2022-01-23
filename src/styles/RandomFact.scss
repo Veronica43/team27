@@ -2,7 +2,10 @@
 @import 'Variables.scss';
 
 .main {
+    font-size: 18pt;
     padding-left: 1rem;
+    color:$background-color;
+    font-weight: bold;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,11 +13,29 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
+    text-align: center;
 
-    @media (max-width: 800px){
-        padding-left: 0rem;
+    h1 {
+        color: $text-color;
     }
+
+    @media (max-width: 1080px){
+        padding-left: 0rem;       
+
+        p {
+            padding: 0rem 1.5rem 0rem 1.5rem;
+        }
+    }
+
 }
+
+.getBack a, a:hover, a:active {
+    font-size: inherit;
+    text-decoration: none;
+    color: #551A8B;
+}
+
+
 
 .container {
     width: 30rem;
