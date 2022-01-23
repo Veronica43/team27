@@ -1,0 +1,22 @@
+@import 'Variables.scss';
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: $text-color;
+  background: $button-color;
+  border: $button-color;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
