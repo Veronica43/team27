@@ -2,7 +2,7 @@ export const questions = [
   {
     //Question 1
     question: "What is the ratio of men to women in engineering?",
-    anwsers: [
+    answers: [
       { option: "4:3", isTrue: false },
       { option: "5:1", isTrue: true },
       { option: "9:1", isTrue: false },
@@ -13,7 +13,7 @@ export const questions = [
     //Question 2
     question:
       "What percentage of tech startups have at least one women on the board of directors?",
-    anwsers: [
+    answers: [
       { option: "37%", isTrue: true },
       { option: "5%", isTrue: false },
       { option: "50%", isTrue: false },
@@ -24,7 +24,7 @@ export const questions = [
     //Question 3
     question:
       "What percentage of girls express a desire for a career in STEM fields?",
-    anwsers: [
+    answers: [
       { option: "12%", isTrue: false },
       { option: "33%", isTrue: false },
       { option: "56%", isTrue: false },
@@ -34,7 +34,7 @@ export const questions = [
   {
     //Question 4
     question: "What is the ratio of men to women in engineering?",
-    anwsers: [
+    answers: [
       { option: "4:3", isTrue: false },
       { option: "5:1", isTrue: true },
       { option: "9:1", isTrue: false },
@@ -44,7 +44,7 @@ export const questions = [
   {
     //Question 5
     question: "Who is considered to be the first female programmer?",
-    anwsers: [
+    answers: [
       { option: "Steve Shirley", isTrue: false },
       { option: "Carol Shaw", isTrue: false },
       { option: "Ada Lovelace", isTrue: true },
@@ -54,7 +54,7 @@ export const questions = [
   {
     //Question 6
     question: "What is Katherine Johnson's nickname?",
-    anwsers: [
+    answers: [
       { option: "AI Guru", isTrue: false },
       { option: "NASA Computer", isTrue: true },
       { option: "GUI Genius", isTrue: false },
@@ -64,7 +64,7 @@ export const questions = [
   {
     //Question 7
     question: 'Who is considered to be the "mother of computing"?',
-    anwsers: [
+    answers: [
       { option: "Wiliamina Fleming", isTrue: false },
       { option: "Ada Lovelace", isTrue: false },
       { option: "Mary Allen Wilkes", isTrue: false },
@@ -74,7 +74,7 @@ export const questions = [
   {
     //Question 8
     question: "Which well-known male in tech was inspired by Adele Goldberg?",
-    anwsers: [
+    answers: [
       { option: "Elon Musk", isTrue: false },
       { option: "Carl Sassenrath", isTrue: false },
       { option: "Steve Jobs", isTrue: true },
@@ -84,7 +84,7 @@ export const questions = [
   {
     //Question 9
     question: "What is Joan Ball famous for?",
-    anwsers: [
+    answers: [
       { option: "Inventing online dating", isTrue: true },
       { option: "Inventing the first smartphone", isTrue: false },
       { option: "Helping put the first man on the moon", isTrue: false },
@@ -94,7 +94,7 @@ export const questions = [
   {
     //Question 10
     question: "Who is he mastermind behind retro gaming as we know it today?",
-    anwsers: [
+    answers: [
       { option: "Susan Kare", isTrue: false },
       { option: "Carol Shaw", isTrue: true },
       { option: "Karen Sparck Jones", isTrue: false },
