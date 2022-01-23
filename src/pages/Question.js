@@ -8,6 +8,21 @@ import { ButtonBack } from "../components/ButtonBack";
 
 export const Question = () => {
   const [points, setPoints] = useState(0);
+  const [index, setIndex] = useState(0); 
+
+  
+  let questionComponent = questions.map((question, questionIndex) => {
+      return (questionIndex === index ? 
+      <AnswerQuestion
+        points={points}
+        setPoints={setPoints}
+        question={question} 
+        key={questionIndex}
+        setIndex={setIndex}
+        index={index} 
+       />
+      : null) 
+  })
 
   return (
     <div>
@@ -15,14 +30,7 @@ export const Question = () => {
       <h1>Answer the question please🤓</h1>
       <div className="content">
         <div className="questions">
-          {questions.map((questionItem, index) => (
-            <AnswerQuestion
-              key={index}
-              points={points}
-              setPoints={setPoints}
-              question={questionItem}
-            />
-          ))}
+          {questionComponent}
         </div>
         <div className="info">
           <Profile points={ points } />

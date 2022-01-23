@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios' ;
 import '../styles/RandomFact.scss';
 import { ButtonBack } from '../components/ButtonBack';
+import { facts } from "../assets/questions";
 
 const fetchUrlFacts = 'https://ffa.aakhilv.me/json'
 
