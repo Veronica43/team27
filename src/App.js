@@ -1,9 +1,15 @@
-import './App.css';
+import './styles/App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Register } from './pages/Register';
 
 function App() {
   return (
     <div className="App">
-      <h1>Team 27</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
