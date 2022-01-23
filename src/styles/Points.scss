@@ -1,0 +1,26 @@
+@import './Variables.scss';
+
+.points-container {
+  padding: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      width: 100%;
+      padding: 10px 0;
+      border-radius: 20px;
+      list-style-type: none;
+    }
+  }
+
+  .active {
+    background-color: $button-color;
+  }
+}
