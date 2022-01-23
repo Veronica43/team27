@@ -30,19 +30,21 @@ In a group of 3 to 4 develop an app or web that allows users to sign up with (na
 The application, lovingly named Femhoot & Fun Facts, consists of four majors parts: User Login, an Initial Options Page, a Kahoot-like Q&A game with User Profile, and a random fun facts generator.
 
   - User Login Page -
-      When users first open the application, they are asked to login. This allows them to create a username. This feature is         accomplished by using HTML and CSS for the visuals and React for receiving and storing the selected username so that it         can be used later in the program. JavaScripted is used to validate the username.
+When users first open the application, they are asked to login. This allows them to create a username. This feature is accomplished by using HTML and CSS for the visuals and React for receiving and storing the selected username so that it can be used later in the program. JavaScripted is used to validate the username.
   
   - Initial Options Page - 
-      Once users have logged in, they are presented with two options in the form of buttons. The options are "Fun Facts" or           "Question Game". This is accomplished by using 
+Once users have logged in, they are presented with two options in the form of buttons. The options are "Fun Facts" or "Question Game". This is accomplished by using links within the HTML that link to other pages. 
   
   - Question Game/User Profile -
-       The Question Game page consists of multiple componnets included a user profiles with an API generated profile picture, a        points tracker powered by JavaScipt, and randomly generated questions that are individual objects stored in an array in        a JavaScript file.
-       As users answer questions correctly by 
-  - Random Fun Facts Generator -
+The Question Game page consists of multiple componnets included a user profiles with an API generated profile picture, a points tracker powered by JavaScipt and randomly generated questions that are individual objects stored in an array in a JavaScript file.
+
+As users answer questions correctly by selecting a button and the value of the selected button is assessed using React combined with the array and options within the questions JavaScript file. If the answer is correct then the user will receive 10 points. Once the user has reached 100 points, the game is over.
   
-  <strong>Additional Features</strong>
-    - Sound effects are also included for when the game starts, when the game is waiting for the user to answer, when an answer      is correct, and when an answer is incorrect.
-    - Custom FemHoot and Fun Facts Header
+    -Random Fun Facts Generator -
+  
+<strong>Additional Features</strong>
+- Sound effects are also included for when the game starts, when the game is waiting for the user to answer, when an answer is correct, and when an answer is       incorrect.
+- Custom FemHoot and Fun Facts Header
   
   
 
