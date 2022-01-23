@@ -1,5 +1,10 @@
 import React from "react";
+import { AnswerQuestion } from "../components/AnswerQuestion";
 
 export const Question = () => {
-  return <div></div>;
+  return (
+    <div>
+      <AnswerQuestion />
+    </div>
+  );
 };
