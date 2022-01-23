@@ -1,25 +1,29 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../components/UserContext';
 import { validateInput } from '../assets/validateInput';
 import { Button } from '../components/Button';
 import '../styles/Register.scss';
 
 export const Register = () => {
+  const { setUserName } = useContext(UserContext);
   const navigate = useNavigate();
-  const [userName, setUserName] = useState('');
+  const [userInput, setUserInput] = useState('');
   const [errors, setErrors] = useState({});
 
   const handleClick = (e) => {
     e.preventDefault();
 
     const data = {
-      userName
+      userInput
     };
 
     // input validation
     const errorChecking = validateInput(data);
     if (!errorChecking.isValid) setErrors(errorChecking.errors);
     if (errorChecking.isValid) {
+      console.log('useerInput', userInput);
+      setUserName(userInput);
       // redirect to note-list according to active route
       navigate('/game');
     }
@@ -34,8 +38,8 @@ export const Register = () => {
           id="username"
           name="username"
           autoFocus
-          value={ userName }
-          onChange={(e) => setUserName(e.target.value)}
+          value={ userInput }
+          onChange={(e) => setUserInput(e.target.value)}
         />
         <span>{ errors.userName }</span>
         <Button text="Enter and enjoy" method={ handleClick } />
