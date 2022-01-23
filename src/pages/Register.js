@@ -31,6 +31,9 @@ export const Register = () => {
 
   return (
     <div className="form-container">
+      <div className="logo">
+        <img src="https://i.ibb.co/YZd9mx5/Fem-Hoot-Logo.png" alt="Logo" />
+      </div>
       <form noValidate autoComplete="off">
         {/* username */}
         <label html="username">Username</label>
@@ -41,7 +44,7 @@ export const Register = () => {
           value={ userInput }
           onChange={(e) => setUserInput(e.target.value)}
         />
-        <span>{ errors.userName }</span>
+        <span className="error">{ errors.userInput }</span>
         <Button text="Enter and enjoy" method={ handleClick } />
       </form>
     </div>

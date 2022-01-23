@@ -41,7 +41,7 @@ input:focus, textarea:focus {
   outline: none;
 }
 
-span {
+.error {
   display: block;
   height: 7px;
   color: $error-color;
@@ -51,4 +51,14 @@ button {
   margin-top: 30px;
 }
 
+.logo {
+  @media screen and (min-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
