@@ -1,11 +1,10 @@
-
-
 import './styles/App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Register } from './pages/Register';
 import { Game } from './pages/Game';
 import { Question } from "./pages/Question";
 import { Points } from './components/Points';
+import RandomFact from './components/RandomFact'
 
 
 
