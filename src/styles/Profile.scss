@@ -1,0 +1,33 @@
+@import './Variables.scss';
+
+.profile-box {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
+
+  .image {
+    width: 190px;
+    margin-top: -20px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .profile-points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+
+    span {
+      color: $text-color;
+    }
+  }
+}

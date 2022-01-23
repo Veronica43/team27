@@ -5,11 +5,11 @@ export const validateInput = (data) => {
   const errors = {};
 
   // Convert empty fields to an empty string so we can use validator functions
-  data.userName = !isEmpty(data.userName) ? data.userName : "";
+  data.userInput = !isEmpty(data.userInput) ? data.userInput : "";
 
-  // userName: check if field is empty
-  if (Validator.isEmpty(data.userName)) {
-    errors.userName = "Enter an username";
+  // userInput: check if field is empty
+  if (Validator.isEmpty(data.userInput)) {
+    errors.userInput = "Enter an username";
   }
 
   return {
