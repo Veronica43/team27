@@ -1,14 +1,18 @@
 import React from "react";
+import { Button } from "./Button";
 
-export const AnswerQuestion = () => {
+export const AnswerQuestion = ({ question, points, setPoints }) => {
   return (
     <div>
       <h1>Answer the question please🤓</h1>
-      <p>who was the first woman programmer??</p>
-      <button>Ada Lovelace</button>
-      <button>Madonna</button>
-      <button>Jennifer Gibs</button>
-      <button>Kate Grants</button>
+      <p>{question.question}</p>
+      {question.answers.map((ansewer, index) => (
+        <Button
+          key={index}
+          text={ansewer.option}
+          method={() => (ansewer.isTrue ? setPoints(points + 10) : 0)}
+        />
+      ))}
     </div>
   );
 };
