@@ -1,6 +1,7 @@
-import './styles/App.scss';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Register } from './pages/Register';
+import "./styles/App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Register } from "./pages/Register";
+import { Question } from "./pages/Question";
 
 function App() {
   return (
