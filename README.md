@@ -45,6 +45,12 @@ As users answer questions correctly by selecting a button and the value of the s
 <strong>Additional Features</strong>
 - Sound effects are also included for when the game starts, when the game is waiting for the user to answer, when an answer is correct, and when an answer is       incorrect.
 - Custom FemHoot and Fun Facts Header
+    
+<strong>Sources:</strong>
+These website were used to create the questions for the Question game:
+    
+    https://medium.com/the-shadow/10-somewhat-interesting-and-sometimes-fascinating-facts-about-women-in-tech-caab5614db8e
+    https://techjury.net/blog/women-in-technology-statistics/
   
   
 
